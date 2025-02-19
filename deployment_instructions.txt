@@ -1,0 +1,52 @@
+Microsoft Teams Echo Bot Deployment Guide
+
+1. Azure Setup:
+   a. Create Azure Bot Resource:
+      - Go to Azure Portal
+      - Create new "Azure Bot" resource
+      - Choose Node.js SDK v4
+      - Select App Service plan
+
+   b. Configure Microsoft Teams Channel:
+      - In Azure Bot resource, go to Channels
+      - Add Microsoft Teams channel
+      - Enable all required permissions
+
+   c. Set up App Service:
+      - Create new App Service
+      - Choose Node.js runtime stack
+      - Link to your Azure Bot resource
+
+2. Bot Configuration:
+   a. Register with Microsoft Bot Framework:
+      - Go to https://dev.botframework.com/
+      - Register new bot
+      - Generate Microsoft App ID and Password
+
+   b. Update Bot Configuration:
+      - Set environment variables:
+        - MicrosoftAppId
+        - MicrosoftAppPassword
+      - Update bot endpoint to your App Service URL
+
+3. Teams Integration:
+   a. Create Teams App Manifest:
+      - Create manifest.json file
+      - Include bot details and App ID
+      - Package as .zip file
+
+   b. Upload to Teams:
+      - Go to Microsoft Teams
+      - Apps -> Upload a custom app
+      - Select your .zip package
+      - Add bot to desired teams/chats
+
+4. Testing:
+   - Interact with bot in Teams
+   - Verify echo functionality
+   - Check Azure logs for errors
+
+Maintenance:
+- Monitor bot performance in Azure
+- Update code via GitHub integration
+- Scale App Service as needed
