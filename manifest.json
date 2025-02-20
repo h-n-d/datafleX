@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "[YOUR_APP_ID]",
+  "packageName": "com.example.teamsbot",
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://yourwebsite.com",
+    "privacyUrl": "https://yourwebsite.com/privacy",
+    "termsOfUseUrl": "https://yourwebsite.com/terms"
+  },
+  "name": {
+    "short": "datafleX",
+    "full": "datafleX"
+  },
+  "description": {
+    "short": "Teams Echo Bot",
+    "full": "Microsoft Teams Echo Bot that repeats messages"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "[YOUR_APP_ID]",
+      "scopes": ["personal", "team", "groupchat"]
+    }
+  ],
+  "validDomains": [
+    "*.azurewebsites.net"
+  ]
+}
